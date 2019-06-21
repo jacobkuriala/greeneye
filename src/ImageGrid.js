@@ -90,7 +90,7 @@ class ImageGrid extends React.Component {
             content = (
               <div>
                   Not found what you are looking for? Ask the
-                  <a href="https://thousandeyes.slack.com/messages/CKERSD7TP"> Green Man</a>
+                  <a href="https://thousandeyes.slack.com/messages/CKERSD7TP"> Green Person</a>
               </div>
             );
         }
