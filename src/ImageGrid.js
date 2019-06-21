@@ -104,7 +104,7 @@ class ImageGrid extends React.Component {
                     <div style={{
                         display: 'block'
                     }}>
-                        <img src={this.state.itemTypeImage} alt={'Image goes here'} width={"480"} height={"270"}/>
+                        <img src={this.state.itemTypeImage} alt={'Image goes here'} width={"240"} height={"270"}/>
                     </div>
                 </Popup>
             </div>
