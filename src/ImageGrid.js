@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Gallery from 'react-grid-gallery';
 import Popup from 'reactjs-popup';
 import images from './data';
-import { Picture } from 'react-responsive-picture';
+
 
 
 class ImageGrid extends React.Component {
@@ -90,7 +90,7 @@ class ImageGrid extends React.Component {
             content = (
               <div>
                   Not found what you are looking for? Ask the
-                  <a href="https://thousandeyes.slack.com/messages/CKERSD7TP">Green Man</a>
+                  <a href="https://thousandeyes.slack.com/messages/CKERSD7TP"> Green Man</a>
               </div>
             );
         }
