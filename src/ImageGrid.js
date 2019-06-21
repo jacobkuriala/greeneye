@@ -34,22 +34,25 @@ class ImageGrid extends React.Component {
     onClickImg(imgNo) {
         // console.log(this.state.images[imgNo]);
         // console.log(this.state.images[imgNo].itemType);
-        if(this.state.images[imgNo].itemType === 'T'){
+        let filteredImages = this.state.images.filter( (item) => {
+            return item.caption.toLowerCase().includes(this.state.searchValue.toLowerCase());
+        });
+        if(filteredImages[imgNo].itemType === 'T'){
             this.setState({
                 showModal: true,
                 itemTypeImage: '/images/trash.jpg'
             });
-        } else if(this.state.images[imgNo].itemType === 'C'){
+        } else if(filteredImages[imgNo].itemType === 'C'){
             this.setState({
                 showModal: true,
                 itemTypeImage: '/images/compost.jpg'
             });
-        } else if(this.state.images[imgNo].itemType === 'R'){
+        } else if(filteredImages[imgNo].itemType === 'R'){
             this.setState({
                 showModal: true,
                 itemTypeImage: '/images/recycle.jpg'
             });
-        }else if(this.state.images[imgNo].itemType === 'S'){
+        }else if(filteredImages[imgNo].itemType === 'S'){
             this.setState({
                 showModal: true,
                 itemTypeImage: '/images/shrug-smiley.png'
